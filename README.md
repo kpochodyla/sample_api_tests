@@ -3,7 +3,7 @@
 This project is an example of API testing with the Reqres API using Python's `requests` library, Pytest and Allure for report generation.
 More focus has been put on creating detailed Allure reports that use as much of the Allure functionalities as possible. Therefore, the test scenarios implemented in this project may not cover all the possible use cases of the Reqres API but this project is still WIP.
 
-The report of these tests can be viewed [here](https://kpochodyla.github.io/sample_api_tests/allure-report/index.html#) through the github pages :)
+The report of these tests can be viewed [here](file:///home/pstrkcz/Documents/sample_api_tests/allure/allure-report/index.html#) through the github pages :)
 
 ## Requirements
 
