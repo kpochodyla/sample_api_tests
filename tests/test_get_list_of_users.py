@@ -1,5 +1,4 @@
 import allure
-
 import src.common_steps as step
 
 
@@ -55,7 +54,8 @@ def test_retrieve_users(settings):
 
     # Step 5: Verify that each user object in the response contains the expected properties
     expected_properties = ["id", "email", "first_name", "last_name", "avatar"]
-    step.check_properties_in_object(response_data["data"], expected_properties)
+    for field in response_data["data"]:
+        step.check_properties_in_object(field, expected_properties)
 
     # Step 6: Verify that the values of the properties in each user object are accurate and match the test data in the Reqres API
     for user, expected_user in zip(response_data["data"], settings.base_users):

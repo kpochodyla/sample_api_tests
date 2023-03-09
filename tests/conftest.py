@@ -1,6 +1,6 @@
-import allure
 import pytest
 
+import allure
 from settings.settings import TestSettings
 
 
