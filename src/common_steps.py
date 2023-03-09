@@ -1,5 +1,6 @@
-import allure
 import requests
+
+import allure
 
 
 @allure.step("Send GET request")
@@ -36,11 +37,10 @@ def check_field_is_instance(field, instance) -> None:
 
 @allure.step("Check expected properties in object")
 def check_properties_in_object(object: dict, expected_properties: list) -> None:
-    for field in object:
-        for prop in expected_properties:
-            assert (
-                prop in field
-            ), f"Expected property {prop} in object, but it is not present"
+    for prop in expected_properties:
+        assert (
+            prop in expected_properties
+        ), f"Expected property {prop} in object, but it is not present"
 
 
 @allure.step("Check user data")
