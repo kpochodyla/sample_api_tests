@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [{"data":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}},{"data":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}},{"data":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}},{"data":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}},{"data":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]
 =======
 [{"data":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}},{"data":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}},{"data":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}},{"data":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}},{"data":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]
@@ -7,3 +8,6 @@
 =======
 [{"data":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2}}]
 >>>>>>> c9b0ba0 (Run new tests)
+=======
+[{"data":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2}},{"data":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2}}]
+>>>>>>> b46ed41 (Run new tests)

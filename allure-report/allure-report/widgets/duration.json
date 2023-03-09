@@ -1,1 +1,0 @@
-[{"uid":"c82e2816a9a819e5","name":"Retrieve List of Users with GET Request","time":{"start":1678395918823,"stop":1678395918936,"duration":113},"status":"passed","severity":"normal"},{"uid":"aa72227cb81151dd","name":"Retrieve Single User by ID with GET Request","time":{"start":1678395918938,"stop":1678395919029,"duration":91},"status":"passed","severity":"normal"}]
