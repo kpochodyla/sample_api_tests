@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 [{"data":{"run":1,"retry":0}},{"data":{"run":1,"retry":0}},{"data":{"run":1,"retry":0}},{"data":{"run":1,"retry":0}},{"data":{"run":1,"retry":0}}]
+=======
+[{"data":{"run":1,"retry":0}},{"data":{"run":1,"retry":0}},{"data":{"run":1,"retry":0}},{"data":{"run":1,"retry":0}},{"data":{"run":1,"retry":0}}]
+>>>>>>> f3616d6 (Configure gh-pages for allure report hosting)
