@@ -1,1 +1,5 @@
-[{"data":{"duration":104}},{"data":{"duration":387}},{"data":{"duration":99}},{"data":{"duration":96}}]
+<<<<<<< HEAD
+[{"data":{"duration":120}},{"data":{"duration":104}},{"data":{"duration":387}},{"data":{"duration":99}},{"data":{"duration":96}}]
+=======
+[{"data":{"duration":120}},{"data":{"duration":104}},{"data":{"duration":387}},{"data":{"duration":99}},{"data":{"duration":96}}]
+>>>>>>> f3616d6b19fca736dd35c2f2e619807b122649f0
