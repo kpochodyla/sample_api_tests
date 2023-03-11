@@ -9,7 +9,7 @@ The report of these tests can be viewed [here](https://kpochodyla.github.io/samp
 
 To run this project, you need to have the following installed on your machine:
 
-- Python 3.x
+- Python
 - Poetry
 - Allure Command Line Interface
 
