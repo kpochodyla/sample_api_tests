@@ -44,7 +44,7 @@ def test_login_user(settings):
         "email": sample_user["email"],
         "password": sample_user["first_name"],
     }
-    precondition.register_user(sample_user, data)
+    precondition.register_user(settings.base_url, sample_user, data)
     # Step 1: Send a POST request to login a users
     response = step.post_request(settings.base_url + "/login", data)
     # Step 2: Verify that the response code is 200 OK
