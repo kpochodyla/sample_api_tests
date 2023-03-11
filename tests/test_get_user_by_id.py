@@ -40,16 +40,16 @@ import src.common_steps as step
 </ul>
 """
 )
-def test_retrieve_users(settings):
+def test_get_user_by_id(settings):
     # Pick random user
     sample_user = random.choice(settings.base_users)
-    # Step 1: Send a GET request to retrieve a list of users
+    # Step 1: Send a GET request to retrieve a user data
     response = step.get_request(settings.base_url + f"/users/{sample_user['id']}")
     # Step 2: Verify that the response code is 200 OK
     step.check_status(response, 200)
     # Step 3: Verify that the response content returned is in JSON format
     step.check_headers(response, "Content-type", "application/json; charset=utf-8")
-    # Step 4: Verify that the response content contains a list of user objects
+    # Step 4: Verify that the response content contains a user data objects
     response_data = response.json()
     step.check_field_in_data(response_data, "data")
     step.check_field_is_instance(response_data["data"], dict)
