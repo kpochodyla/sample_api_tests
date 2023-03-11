@@ -1,13 +1,1 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-[{"data":{"duration":120}},{"data":{"duration":104}},{"data":{"duration":387}},{"data":{"duration":99}},{"data":{"duration":96}}]
-=======
-[{"data":{"duration":120}},{"data":{"duration":104}},{"data":{"duration":387}},{"data":{"duration":99}},{"data":{"duration":96}}]
->>>>>>> f3616d6 (Configure gh-pages for allure report hosting)
-=======
-[{"data":{"duration":206}}]
->>>>>>> c9b0ba0 (Run new tests)
-=======
-[{"data":{"duration":265}},{"data":{"duration":206}}]
->>>>>>> b46ed41 (Run new tests)
+[{"data":{"duration":634}},{"data":{"duration":120}},{"data":{"duration":104}},{"data":{"duration":387}},{"data":{"duration":99}},{"data":{"duration":96}}]
