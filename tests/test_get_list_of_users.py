@@ -40,7 +40,7 @@ import src.common_steps as step
 </ul>
 """
 )
-def test_retrieve_users(settings):
+def test_get_list_of_users(settings):
     # Step 1: Send a GET request to retrieve a list of users
     response = step.get_request(settings.base_url + "/users")
     # Step 2: Verify that the response code is 200 OK
