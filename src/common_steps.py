@@ -10,7 +10,7 @@ def get_request(url: str) -> requests.Response:
 
 
 @allure.step("Send POST request")
-def post_request(url: str, data: dict) -> requests.Response:
+def post_request(url: str, data: dict = None) -> requests.Response:
     response = requests.post(url=url, data=data)
     return response
 
@@ -45,8 +45,8 @@ def check_field_is_instance(field, instance) -> None:
 def check_properties_in_object(object: dict, expected_properties: list) -> None:
     for prop in expected_properties:
         assert (
-            prop in expected_properties
-        ), f"Expected property {prop} in object, but it is not present"
+            prop in object
+        ), f"Expected property {prop} in object: {object}, but it is not present"
 
 
 @allure.step("Check user data")
