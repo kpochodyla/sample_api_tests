@@ -8,10 +8,12 @@ def get_request(url: str) -> requests.Response:
     response = requests.get(url=url)
     return response
 
+
 @allure.step("Send POST request")
 def post_request(url: str, data: dict) -> requests.Response:
     response = requests.post(url=url, data=data)
     return response
+
 
 @allure.step("Check response status code")
 def check_status(response: requests.Response, status_code: int) -> None:

@@ -37,7 +37,7 @@ def test_register_user(settings):
     data = {
         "username": sample_user["email"],
         "email": sample_user["email"],
-        "password": sample_user["first_name"] 
+        "password": sample_user["first_name"],
     }
     # Step 1: Send a POST request to register a users
     response = step.post_request(settings.base_url + "/register", data)
