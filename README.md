@@ -29,3 +29,11 @@ If you encounter a issue with the field not loading up, please take a look at th
 Alternatively for step 2 you can do:
 2. Run Pytest to execute the tests: `pytest --alluredir=allure/allure-results`.
 3. Generate an Allure report using the CLI: `allure serve allure/allure-results`.
+
+## Jenkins
+
+This project can be run inside of a Jenkins pipeline. It would require you to install Jenkins with the basic plugins including Python, Git, Allure and set them up properly.
+Example of a jenkins job confifuration can be found in `jenkins/jenkins_configuration.xml` file.
+A job configured in this way would not only run the test, but would create an artifact with allure report. The biggest advantage of this aproach would be that the newest report is always avaible under the same url (e.g. for me it's `http://localhost:8090/job/sample_api_test/allure/`, but in a comercial environemt jenkins would be set up on a server avaible for everyone, not a local machine).
+### Example of a jenkins job configured with allure reports plugin
+![Jenkins_Showcase](https://github.com/kpochodyla/sample_api_tests/blob/cbe7b63b36605b2898b2569168adde9618a88e37/jenkins/jenkins_showcase.png) 
