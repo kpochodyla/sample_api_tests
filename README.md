@@ -37,3 +37,19 @@ Example of a jenkins job confifuration can be found in `jenkins/jenkins_configur
 A job configured in this way would not only run the test, but would create an artifact with allure report. The biggest advantage of this aproach would be that the newest report is always avaible under the same url (e.g. for me it's `http://localhost:8090/job/sample_api_test/allure/`, but in a comercial environemt jenkins would be set up on a server avaible for everyone, not a local machine).
 ### Example of a jenkins job configured with allure reports plugin
 ![Jenkins_Showcase](https://github.com/kpochodyla/sample_api_tests/blob/cbe7b63b36605b2898b2569168adde9618a88e37/jenkins/jenkins_showcase.png) 
+
+## Allure
+As mentioned above, the biggest focus of tests in this repo was to showcase the abbilities of usage allure reports in automatic tests.
+To view the generated report you can:
+- Visit [this gh-page](https://kpochodyla.github.io/sample_api_tests/allure/allure-report/index.html#), 
+- Download the repository and open `allure/allure-report/index.html` file in a browser,
+- Set up a Jenkins job using the configuration under `jenkins/jenkins_configuration.xml` and view the artefacts of the job,
+- Refer to the images posted below.
+### Main page of allure report
+![Overview](https://github.com/kpochodyla/sample_api_tests/blob/99dd49d1c0e7a74add6556e3bdad90c668b94649/allure/showcase/overview.png)
+### Single test overview
+![Test_overview](https://github.com/kpochodyla/sample_api_tests/blob/99dd49d1c0e7a74add6556e3bdad90c668b94649/allure/showcase/sample_test_overview.png)
+### Test Steps defined by `@allure.step` decorator
+![Test_steps](https://github.com/kpochodyla/sample_api_tests/blob/99dd49d1c0e7a74add6556e3bdad90c668b94649/allure/showcase/sample_test_steps.png)
+### Test Steps with substeps
+![Steps_with_substeps](https://github.com/kpochodyla/sample_api_tests/blob/99dd49d1c0e7a74add6556e3bdad90c668b94649/allure/showcase/sample_test_steps_with_substeps.png)
