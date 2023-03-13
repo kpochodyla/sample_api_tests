@@ -40,6 +40,7 @@ import src.common_steps as step
 </ul>
 """
 )
+@allure.link("https://kpochodyla.github.io/sample_api_tests/test_scenarios/test_get_user_by_id", name="Retrieve Single User by ID with GET Request")
 def test_get_user_by_id(settings):
     # Pick random user
     sample_user = random.choice(settings.base_users)

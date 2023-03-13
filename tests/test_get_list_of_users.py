@@ -40,6 +40,7 @@ import src.common_steps as step
 </ul>
 """
 )
+@allure.link("https://kpochodyla.github.io/sample_api_tests/test_scenarios/test_get_list_of_users", name="Retrieve List of Users with GET Request")
 def test_get_list_of_users(settings):
     # Step 1: Send a GET request to retrieve a list of users
     response = step.get_request(settings.base_url + "/users")

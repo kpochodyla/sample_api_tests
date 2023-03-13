@@ -35,6 +35,7 @@ import src.preconditions_steps as precondition
 
 """
 )
+@allure.link("https://kpochodyla.github.io/sample_api_tests/test_scenarios/test_login_user", name="Login user with POST Request")
 def test_login_user(settings):
     # Pick random user
     sample_user = random.choice(settings.base_users)
