@@ -1,0 +1,63 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?><project>
+  <actions/>
+  <description>API Tests with Allure Report Generation&#13;
+</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@5.0.0">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/kpochodyla/sample_api_tests.git</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="empty-list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <com.cloudbees.jenkins.GitHubPushTrigger plugin="github@1.37.0">
+      <spec/>
+    </com.cloudbees.jenkins.GitHubPushTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>pip install poetry
+export PATH="$HOME/.local/bin:$PATH"
+poetry install
+poetry run pytest --alluredir=tmp/allure-results</command>
+      <configuredLocalRules/>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <ru.yandex.qatools.allure.jenkins.AllureReportPublisher plugin="allure-jenkins-plugin@2.30.3">
+      <configPath/>
+      <jdk/>
+      <properties/>
+      <results>
+        <ru.yandex.qatools.allure.jenkins.config.ResultsConfig>
+          <path>tmp/allure-results</path>
+        </ru.yandex.qatools.allure.jenkins.config.ResultsConfig>
+      </results>
+      <reportBuildPolicy>ALWAYS</reportBuildPolicy>
+      <includeProperties>false</includeProperties>
+      <disabled>false</disabled>
+      <report>allure-report</report>
+    </ru.yandex.qatools.allure.jenkins.AllureReportPublisher>
+  </publishers>
+  <buildWrappers>
+    <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.22"/>
+  </buildWrappers>
+</project>
